@@ -12,20 +12,6 @@ for($i=0;$i<count($fruits);$i++){
     echo $fruits[$i].",<br>";
 }
 
-//  $cars=array("Toyota","Honda","Nissan","Mazda","Subaru","BMW");
-
-//  echo count($cars)."<br>";
-
-
-//  foreach($cars as $car){
-//      echo "$car, <br>";
-//  }
-
-
-//  for($e=0;$e<count($cars);$e++){
-//     echo $cars[$e].",<br>";
-//  }
-
 
 $x=3.14;
 echo gettype($x); //int
@@ -61,6 +47,8 @@ function maximum($x,$y){
   }
 
   echo odd_or_even(77);
+
+
 
 ?> 
 
