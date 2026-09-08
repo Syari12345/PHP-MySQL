@@ -1,6 +1,6 @@
 <?php
 
-$host='localhost';
+$host='localhost'; ---> parametrat konfigurus
 $user="root";
 $password="";
 $db_name="testdb";
@@ -19,6 +19,6 @@ try{
 }catch(Exception $e){
     echo "Something went wrong!";
 }
-
+//The $e is short for error and can be whatever you want//
 
 ?>
