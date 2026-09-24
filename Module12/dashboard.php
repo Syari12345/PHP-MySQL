@@ -1,16 +1,32 @@
 <?php
-include("header.php")?>
+include("header.php");
+include("config.php");
+$sql='SELECT * from user_login';
+$users=$conn->prepare($sql);
+$users->execute();
+$userData=$users->fetchAll();
+
+?>
+
+<style>
+table{
+    border: 1px solid black;
+}
+tr,td,th{
+    border: 1px solid black;
+}
+table,tr,td{
+    border-collapse: collapse;
+}
+td{
+
+}
 
 
-<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Welcome</a>
-    <ul class="navbar-nav px-3">
-         <li class="nav-item text-nowrap">
-            <a class="nav-link" href="signout.php">Signout</a>
 
-        </li>
-</ul>
-</nav>
+</style>
+
+
 
 <div class="container-fluid">
     <div class="row">
@@ -32,7 +48,44 @@ include("header.php")?>
         </div>
     </nav>
 
-<main role="main" class="col-md-9 ml-sm-auto col-lg"></main>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+    </div>
+    <tables>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <?php
+        foreach($userData as $user){
+
+        ?>
+        <tbody>
+            <tr>
+                <td><?= $user['name'] ?></td>
+                <td><?= $user['surname'] ?></td>
+                <td><?= $user['username'] ?></td>
+                <td><?= $user['email'] ?></td>
+                <td>Delete | Edit</td>
+
+            </tr>
+            <?php
+        }
+            ?>
+
+
+        </tbody>
+
+
+    </tables>
+</div>
+</main>
 
 </div>
 
