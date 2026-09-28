@@ -9,6 +9,7 @@ $userData=$users->fetchAll();
 ?>
 
 <style>
+    
 table{
     border: 1px solid black;
 }
@@ -19,9 +20,8 @@ table,tr,td{
     border-collapse: collapse;
 }
 td{
-
+    padding: 10px;
 }
-
 
 
 </style>
@@ -52,7 +52,8 @@ td{
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Dashboard</h1>
     </div>
-    <tables>
+    <div>
+    <table>
         <thead>
             <tr>
                 <th>Name</th>
@@ -76,19 +77,14 @@ td{
 
             </tr>
             <?php
-        }
+               }
             ?>
-
-
         </tbody>
-
-
-    </tables>
+    </table>
 </div>
 </main>
 
 </div>
-
 
 </div>
 
