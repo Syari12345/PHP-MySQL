@@ -12,18 +12,18 @@ if(isset($_POST['submit'])){
     empty($lastname)||
     empty($email)||
     empty($residence)){
-        
+
 
         echo "You need to fill all data";
     }else{
-        $sql="SELECT * FROM students where email='$email' OR residence='$residence'";
+        $sql="SELECT * FROM students where email='$email' OR name='$name'";
 
         $tempSQL=$conn->prepare($sql);
         $tempSQL->execute();
 
         if($tempSQL->rowCount()>0){
 
-            echo "This email or residence already exists!";
+            echo "This email or name already exists!";
             header("refresh:2; url=signup.php");
 
         }else{
