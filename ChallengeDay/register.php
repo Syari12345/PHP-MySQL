@@ -2,6 +2,7 @@
 include("config.php");
 
 if(isset($_POST['submit'])){
+
     $name=$_POST['name'];
     $lastname=$_POST['lastname'];
     $email=$_POST['email'];
@@ -11,6 +12,8 @@ if(isset($_POST['submit'])){
     empty($lastname)||
     empty($email)||
     empty($residence)){
+        
+
         echo "You need to fill all data";
     }else{
         $sql="SELECT * FROM students where email='$email' OR residence='$residence'";
@@ -19,18 +22,22 @@ if(isset($_POST['submit'])){
         $tempSQL->execute();
 
         if($tempSQL->rowCount()>0){
-        echo "This username or email already exists!";
-        header("refresh:2; url=signup.php");  
-    }
-     else{
-        $sql="INSERT INTO students(name,lastname,residence,email,) VALUES ('$name','$lastname','residence','$email')";
 
-        $insertSql=$conn->prepare($sql);
-        $insertSql->execute();
+            echo "This email or residence already exists!";
+            header("refresh:2; url=signup.php");
 
-        echo "New user is created successfully!";
-        header("refresh:2; url=login.php");
-      }
+        }else{
+
+            $sql="INSERT INTO students(name,lastname,email,residence) 
+            VALUES ('$name','$lastname','$email','$residence')";
+
+            $insertSql=$conn->prepare($sql);
+            $insertSql->execute();
+
+             echo "New student is created successfully!";
+            header("refresh:2; url=students.php");
+
         }
-    }
+ }
+}
 ?>
