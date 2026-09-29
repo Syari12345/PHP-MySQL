@@ -1,6 +1,6 @@
 <?php
 
-$host='localhost'; ---> parametrat konfigurus
+$host='localhost'; ---> //parametrat konfigurus//
 $user="root";
 $password="";
 $db_name="testdb";
