@@ -10,7 +10,7 @@
 </head>
 <body> 
     <main class="form-signin">
-        <form action="loginLogic.php">
+        <form action="loginLogic.php" method="post">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
           
                 <div class="form-floating">
@@ -18,17 +18,18 @@
         <label for="username"></label>
            </div>
 
-                  <div class="form-floating">
-        <input type="text" class="form-control" placeholder="Password" name="password" id="password">
+        <div class="form-floating">
+        <input type="password" class="form-control" placeholder="Password" name="password" id="password">
         <label for="password"></label>
            </div>
            <div class="checkbox mb-3">
             <label>
-                <input type="checkbox" value="remember-me">
+                <input type="checkbox" value="remember-me">Remember Me
             </label>
 
            </div>
-
+           <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Sign in</button>
+           <span>Dont have an account</span><a href="index.php"></a>
         </form>
 
     </main>
