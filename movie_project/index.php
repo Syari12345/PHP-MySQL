@@ -10,7 +10,7 @@
 </head>
 <body>
     <main class="form-signin">
-        <form action="register" method="post">
+        <form action="register.php" method="post">
             <h1 class="h3 mb-3 fw-normal">Register</h1>
 
             <div class="form-floating">
@@ -24,8 +24,14 @@
 
 
             <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Email" name="email" id="email">
+                <input type="email" class="form-control" placeholder="Email" name="email" id="email">
                 <label for="email"></label>
+            </div>
+
+
+               <div class="form-floating">
+                <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+                <label for="password"></label>
             </div>
 
             <div class="form-floating">
@@ -35,20 +41,14 @@
             </div>
 
 
-            <div class="form-floating">
-
-                <input type="text" class="form-control" placeholder="Password" name="password" id="password">
-                <label for="password"></label>
-            </div>
-
             <div class="checkbox mb-3">
                 <label>
                     <input type="checkbox" value="remember-me">Remember Me
-                </label>
+            </label>
             </div>
 
             <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Signup</button>
-            <span>Already have an Account:</span><a href="login.php"></a>
+            <span>Already have an Account: <a href="login.php" style="color:red"></a></span>
             
         </form>
     </main>

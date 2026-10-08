@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include_once("config.php");
 
 if(isset($_POST['submit'])){
    $emri=$_POST['emri'];
@@ -15,9 +15,7 @@ if(isset($_POST['submit'])){
     empty($roli)
    
 ){
-    echo "You have to fill all data.";
-    header("refresh:2; url=login.php");
-
+    echo "You have not filled all fields.";
 }else{
      $sql="SELECT * FROM users WHERE username='$username' OR email='$email'";
      $tempSql=$conn->prepare($sql);

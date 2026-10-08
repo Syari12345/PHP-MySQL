@@ -11,8 +11,8 @@ if(isset($_POST['submit'])){
  ){
     echo "Fill all fields!";
         header("refresh:2; url=login.php");
- }else
-      $sql="SELECT * FROM users WHERE username='$username' OR email='$email'";
+ }else{
+      $sql="SELECT * FROM users WHERE username='$username'";
      $tempSql=$conn->prepare($sql);
       $tempSql->execute();
 
@@ -27,12 +27,13 @@ if(isset($_POST['submit'])){
                $_SESSION['username']=$user['username'];
                 $_SESSION['email']=$user['email'];
                  $_SESSION['roli']=$user['roli'];
-                  header("Location: dashboard.php");
-
                    echo "Login succefully";
-                  header("refresh:3; url=login.php");
+                  header("refresh:3; url=dashboard.php");
         }else{
             echo "Incorrect Password";
               header("refresh:2; url=login.php");
         }
       }
+ }
+
+ ?>
