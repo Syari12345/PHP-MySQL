@@ -23,12 +23,12 @@ if(isset($_POST['submit'])){
 
           if($tempSQL->rowCount()>0){
         echo "This username or email already exists!";
-        header("refresh:2; url=signup.php");
+        header("refresh:2; url=index.php");
         }else{
             $hashedPassword=password_hash($password,PASSWORD_BCRYPT);
-              $sql="INSERT INTO users(emri,username,email,password,roli) VALUES ('$emri','$username','$email','$password','$roli')";
+            $query="INSERT INTO users(emri,username,email,password,roli) VALUES ('$emri','$username','$email','$hashedPassword','$roli')";
               
-        $insertSql=$conn->prepare($sql);
+        $insertSql=$conn->prepare($query);
         $insertSql->execute();
         echo "New user created successfully, in 2 seconds please login!";
         header("refresh:2; url=login.php");

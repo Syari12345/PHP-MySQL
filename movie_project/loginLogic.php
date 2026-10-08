@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
      $tempSql=$conn->prepare($sql);
       $tempSql->execute();
 
-      if($tempSql)->rowCount()==0){
+      if($tempSql->rowCount()==0){
         echo "no user found with thid username";
          header("refresh:2; url=login.php");
       }else{
