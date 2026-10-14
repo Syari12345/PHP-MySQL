@@ -40,7 +40,7 @@ $selectedMovies->execute();
              <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                     <a href="#" class="btn btn-sm btn-outline-secondary">Details</a>
-                    <a href="book.php?movie_id=<?php echo $movie['id']; ?>" class="btn btn-sm btn-outlinr-secondary">Book</a>
+                    <a href="details.php?movie_id=<?php echo $movie['id']; ?>" class="btn btn-sm btn-outlinr-secondary">Book</a>
 
                 </div>
                 <small class="text-muted">release year: <?php echo $movie['viti_publikimit'] ?></small>
@@ -54,6 +54,8 @@ $selectedMovies->execute();
     </div>
 </div>
 
+
+</body>
 </html>
 
 

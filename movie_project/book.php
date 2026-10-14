@@ -1,6 +1,7 @@
 <?php
-include_once("config.php");
 
+include_once("config.php");
+echo($_POST['movie_id']);
 if(isset($_POST['submit'])){
    $movie_id=$_POST['movie_id'];
    $notickets=$_POST['notickets'];
@@ -8,14 +9,14 @@ if(isset($_POST['submit'])){
    $seat=$_POST['seat'];
    $time=$_POST['time'];
    $user_id=1;
-}if(empty($notickets)|| empty($data)|| empty($seat)){
+   if(empty($notickets)||empty($data)||empty($seat)){
     echo "Fill all fields!";
-        header("refresh:2; url=index.php");
-}
-    $sql="INSERT INTO booking(movieID,userID,'data',nr_tiketve,ulsja) VALUES ($movie_id,$user_id,'$data - $time','$notickets','$seat')";
+        header("refresh:2; url=details.php?movie_id=$movie_id");
+    }
+    $sql="INSERT INTO bookings(movieID,userID,data,nr_tiketve,ulesja) VALUES ($movie_id,$user_id,'$data - $time','$notickets','$seat')";
     $insertBooking=$conn->prepare($sql);
 
-    $insertBooking->execute()
-    $
+    $insertBooking->execute();
+    header("Location: home.php");
 }
-?>
+?> 

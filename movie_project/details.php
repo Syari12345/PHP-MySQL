@@ -34,25 +34,36 @@ $selectedMovies->execute();
             <div class="col">
             <div class="card shadow-sm">
 
-            <img src="http://www.blackmancustoms.com/axium.htm" height="250">
+            <img src="http://www.blackmancustoms.com/axium.htm" height="150">
              <div class="card-body">
                 <h4 class="card-text"><?php echo $movie_data['emri_filmit'] ?></h4>
                 <form action="book.php" method="post">
+                    <input type="text" readonly="readonly" id="movie_id" name="movie_id" value="<?php echo $movie_data['id']; ?>">
                     <div class="form-floating">
-                        <input type="hidden" id="notickets" placeholder="Number of tickets" name="notickets">
-                        <label for="notickets">Number of tickets</label>
-                    </div>
-
-                      <div class="form-floating">
-                        <input type="text" id="data" placeholder="Date" name="data">
-                        <label for="notickets">Number of tickets</label>
-                    </div>
-
-                      <div class="form-floating">
                         <input type="number" id="notickets" placeholder="Number of tickets" name="notickets">
-                        <label for="notickets">Number of tickets</label>
+                        <!-- <label for="notickets">Number of tickets</label> -->
                     </div>
 
+                           <div class="form-floating">
+                        <input type="text" id="data" placeholder="Data" name="data">
+                        <!-- <label for="data">Data</label> -->
+                    </div>
+
+                      <div class="form-floating">
+                        <input type="text" id="seat" placeholder="Seat Number" name="seat">
+                        <!-- <label for="seat">Number of tickets</label> -->
+                    </div>
+
+                      <div class="form-floating">
+                      <select name="time" id="time">
+                        <option value="">Time</option>
+                        <option value="12:00">12:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="20:00">20:00</option>
+                      </select>
+                    </div>
+                  <button type="submit" name="submit" class="w-100 btn btn-lg btn-primary">Book</button>
                 </form>
              </div>
 

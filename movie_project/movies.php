@@ -82,7 +82,7 @@
               <label for="rating"></label>
             </div>
 
-          <button type="submit"></button>
+          <button type="submit" name="submit" class="btn btn-primary btn-lg w-100">Add Movies</button>
         </form>
 
           </main>
