@@ -1,4 +1,41 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital school</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <main class="form-signin">
+            <form action="loginLogic.php" method="post">
+                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Username" name="username" id="username">
+                    <label for="username"></label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+                    <label for="password"></label>
+                </div>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me">Remember Me
+                    </label>
+                </div>
+                
+                <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Sign in</button>
+                <span>Don't have an account?</span><a href="index.php"></a>
+            </form>
+            
+        </main>
+    </body>
+
+=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,4 +76,5 @@
 
 
 </body>
+>>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
 </html>

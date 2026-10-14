@@ -53,6 +53,14 @@ html,
   border-top-right-radius: 0;
 }
 
+<<<<<<< HEAD
+
+form.form-signin input {
+    margin-bottom: 10px;
+}
+
+=======
+>>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
 .feather {
   width: 16px;
   height: 16px;
@@ -164,4 +172,8 @@ html,
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+<<<<<<< HEAD
+}
+=======
 }  
+>>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
