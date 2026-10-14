@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+
     <title>Digital school</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style.css">
-=======
     <title>Digital School</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
      <link rel="stylesheet" href="css/style.css">
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
+
 </head>
 <body>
     <main class="form-signin">
         <form action="register.php" method="post">
-<<<<<<< HEAD
+
             <h1 class="h3 mb-3 fw-normal" >Register</h1>
-=======
+
             <h1 class="h3 mb-3 fw-normal">Register</h1>
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
 
             <div class="form-floating">
                 <input type="text" class="form-control" placeholder="Emri" name="emri" id="emri">
@@ -32,16 +30,14 @@
                 <input type="text" class="form-control" placeholder="Username" name="username" id="username">
                 <label for="username"></label>
             </div>
-<<<<<<< HEAD
-=======
 
 
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
+
             <div class="form-floating">
                 <input type="email" class="form-control" placeholder="Email" name="email" id="email">
                 <label for="email"></label>
             </div>
-<<<<<<< HEAD
+
             <div class="form-floating">
                 <input type="password" class="form-control" placeholder="Password" name="password" id="password">
                 <label for="password"></label>
@@ -65,7 +61,6 @@
 
 </body>
 </html>
-=======
 
 
                <div class="form-floating">
@@ -93,6 +88,3 @@
     </main>
 </body>
 
-
-
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa

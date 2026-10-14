@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
     include_once("config.php");
 
      if(isset($_POST['submit'])){
@@ -44,7 +43,6 @@
         }
 
 ?>
-=======
 include_once("config.php");
 
 if(isset($_POST['submit'])){
@@ -83,4 +81,4 @@ if(isset($_POST['submit'])){
  }
 
  ?>
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
+

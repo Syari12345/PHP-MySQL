@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<<<<<<< HEAD
+<!DOCTYPE html
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -35,7 +34,7 @@
         </main>
     </body>
 
-=======
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -76,5 +75,5 @@
 
 
 </body>
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
+
 </html>

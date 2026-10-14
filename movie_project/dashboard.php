@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
     session_start();
     include_once("config.php");
     // if(empty($_SESSION['username'])){
@@ -12,7 +12,7 @@
     $selectUsers->execute();
 
     $users=$selectUsers->fetchAll();
-=======
+
 session_start();
 include_once("config.php");
 
@@ -26,13 +26,12 @@ $selectUsers->execute();
 
 $users=$selectUsers->fetchAll();
 
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
 
 ?>
 
 
 <html>
-<<<<<<< HEAD
+
     <head>
         <title>Dashboard</title>
         <link href="./css/bootstrap.css" rel="stylesheet">
@@ -127,7 +126,7 @@ $users=$selectUsers->fetchAll();
     </body>
     <script crossorigin="anonymous" defer src="./js/bootstrap.js"></script>
     <script src="./js/script.js"></script>
-=======
+
 <head>
     <title> </title>
    <link rel="stylesheet" href="css/bootstrap.css">
@@ -226,6 +225,6 @@ $users=$selectUsers->fetchAll();
 
 <script crossorigin="anonymous" defer src="css/bootstrap.css"></script>
 <script src="js/script.js"></script>
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
+
 
 </html>

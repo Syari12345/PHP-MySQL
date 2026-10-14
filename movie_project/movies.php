@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 <html>
     <head>
@@ -93,7 +93,7 @@
         </div>
     </body>
 </html>
-=======
+
 <html>
 <head>
     <title> </title>
@@ -186,4 +186,3 @@
       </div>
 </body>
 </html>
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa

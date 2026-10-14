@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
      $u="root";
      $pass="";
      $server="localhost";
@@ -13,7 +12,6 @@
      } catch (Exception $e) {
         echo "Error:". $e->getMessage();
      }
-=======
 $u="root";
 $pass="";
 $server="localhost";
@@ -28,6 +26,6 @@ try{
 }
 
 
->>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
+
 
 ?>
