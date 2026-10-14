@@ -19,18 +19,30 @@ body{
 
 .form-signin .checkbox{
     font-weight: 400;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
 }
 
 .form-signin .form-floating:focus-within{
     z-index:2;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
 .form-signin input[type="email"]{
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
 .form-signin input[type="password"]{
     margin-bottom: 10px;
     border-bottom-right-radius: 0;
@@ -39,3 +51,7 @@ body{
 .form-floating{
     margin:10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> a4d08df2028dcfdb713be86a0b08ad414a1c14aa
