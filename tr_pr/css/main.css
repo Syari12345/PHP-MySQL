@@ -1,0 +1,76 @@
+body {
+    background-color: #f5f7f2;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #123f46 !important;
+    padding: 18px;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.album {
+    background-color: #f5f7f2 !important;
+    padding-top: 45px !important;
+}
+
+h1 {
+    color: #123f46;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(18, 63, 70, 0.15) !important;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.card-title,
+.card-text {
+    color: #123f46;
+}
+
+.btn-primary {
+    background-color: #e58b42;
+    border-color: #e58b42;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #c96e2b;
+    border-color: #c96e2b;
+}
+
+.btn-outline-primary {
+    color: #176b70;
+    border-color: #176b70;
+}
+
+.btn-outline-primary:hover {
+    background-color: #176b70;
+    border-color: #176b70;
+    color: #ffffff;
+}
+
+.text-success {
+    color: #176b55 !important;
+    font-size: 16px;
+    font-weight: bold;
+}
