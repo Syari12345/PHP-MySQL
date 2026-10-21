@@ -72,7 +72,7 @@ $destinations_data=$selectDestinations->fetchAll();
             <input type="number" min="0" step="0.01"
             class="form-control floatingInput"
             placeholder="Price" name="cmimi" id="cmimi" required>
-            <label for="cmimi">Price ($)</label>
+            <label for="cmimi">Price </label>
         </div>
 
         <button type="submit" name="submit"
@@ -93,7 +93,7 @@ $destinations_data=$selectDestinations->fetchAll();
         <th scope="col">ID</th>
         <th scope="col">Destination</th>
         <th scope="col">Country</th>
-        <th scope="col">Price ($)</th>
+        <th scope="col">Price </th>
         <th scope="col">Action</th>
     </tr>
 </thead>

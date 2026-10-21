@@ -68,7 +68,7 @@ if(isset($_GET['destination_id'])){
                             </div>
 
                             <small class="text-success">
-                                Price: €<?php echo $destination['cmimi']; ?> per person
+                                Price: <?php echo $destination['cmimi']; ?> per person
                             </small>
                         </div>
 

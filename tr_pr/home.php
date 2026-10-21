@@ -65,7 +65,7 @@ $destinations_data=$selectedDestinations->fetchAll(PDO::FETCH_ASSOC);
                     </div>
 
                     <small class="text-success">
-                        €<?php echo $destination['cmimi']; ?>
+                        <?php echo $destination['cmimi']; ?>
                     </small>
                 </div>
             </div>
