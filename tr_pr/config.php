@@ -3,7 +3,7 @@
      $u="root";
      $pass="";
      $server="localhost";
-     $dbname="traveling_project";
+     $dbname="raveling_project";
 
      try{
         $conn=new PDO("mysql:host=$server;dbname=$dbname",$u,$pass);
@@ -14,7 +14,9 @@
 $u="root";
 $pass="";
 $server="localhost";
-$dbname="traveling_project";
+$dbname="raveling_project";
+
+//removed the 't'//
 
 try{
     $conn=new PDO("mysql:host=$server;dbname=$dbname",$u,$pass);
